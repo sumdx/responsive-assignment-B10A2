@@ -1,0 +1,479 @@
+/* font added */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+/* Shared Style */
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section-style{
+    margin-top: 100px;
+}
+
+body{
+    background: black;
+    z-index: -1;
+    font-family: 'Inter';
+}
+
+.section-title{
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.section-subtitle{
+    color: gray;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 24px;
+}
+
+/* Header */
+header{
+    
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    z-index: 1;
+    
+    
+}
+    /* Navbar */
+.navbar{
+    padding-top: 55px;
+
+}
+
+.navbar div{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.navbar div h1{
+    color: rgb(230, 83, 60);
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+.navbar div ul{ 
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 47px;
+    list-style-type: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 4px;
+    border-radius: 46px;
+}
+.navbar div a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    cursor: pointer;
+    padding: 8px 20px;
+}
+
+.navbar div ul li a:hover,
+.navbar div ul li a:active{
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    
+}
+/* Banner */
+.banner{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.banner-text-container{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.banner-text-container h1{
+    font-family: 'Inter';
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 120%;
+    
+}
+#span { 
+    font-size: 8rem;
+    font-family: 'Miama';
+    font-weight: 400;
+}
+.banner-img-container{
+    margin: 0 auto;
+    position: relative;
+}
+.banner-img-container>div{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.5);
+    padding: 23px;
+}
+.banner-img-container h4{
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.banner-img-container h5{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.banner-img-container div p{
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+}
+.banner-img-container>div>span{
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 12px;
+}
+.banner-text-container p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 28px;
+}
+.div1{
+    z-index: 2;
+    position: absolute;
+    right: -90px;
+    top: 110px;
+    width: fit-content;
+}
+.div2{
+    z-index: 2;
+    position: absolute;
+    left: -100px;
+    bottom: 40px;
+    width: fit-content;
+    
+}
+.banner-button-container{
+    display: flex;
+    gap: 14px;
+}
+.banner-button-container button{
+    color: rgb(255, 255, 255);
+    margin-top: 28px;
+    padding: 16px 40px;
+    border-radius: 42px;
+    margin-top: 28px;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    margin-right: 14px;
+}
+
+.banner-button-container button:hover{
+    margin-top: 28px;
+    padding: 16px 40px;
+    border-radius: 42px;
+    margin-top: 28px;
+    font-size: 1.1rem;
+    background-color: rgb(230, 83, 60);
+    border: 0px;
+    cursor: pointer;
+}
+
+/* Habits Section */
+
+.habit-content-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 48px;
+    gap: 10px;
+}
+.habit-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.habit-img{
+    border-radius: 50%;
+}
+
+.habit-text{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 36px;
+}
+.habit-text2{
+    color: gray;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+
+/* run */
+.run-c{
+    margin-top: 100px;
+}
+.run{
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    display: flex;
+    gap: 150px;
+    padding: 50px;
+}
+.run-text{
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;
+}
+.run-text>h2{
+    text-align: left;
+}
+.run-text>p{
+    text-align: left;
+}
+
+.run-button{
+    color: rgb(255, 255, 255);
+    margin-top: 24px;
+    border: none;
+    font-size: 1.1rem;
+    padding: 20px 70px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+}
+
+.run-img{
+    background-image: url('../images/run.jpg');
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+    border-radius: 20px;
+}
+/* Training */
+
+.training-text h2{
+    text-align: left;
+}
+.training-text p{
+    text-align: left;
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+.training-img{
+    margin: 0 auto;
+}
+.training-img img{
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.row1{
+    
+    display: grid;
+    grid-template-columns: .7fr 1.5fr .8fr;
+}
+
+.row2{
+    display: grid;
+    grid-template-columns: 1.5fr .7fr .8fr ;
+    margin: 0;
+}
+
+/* BMI CALCULATOR */
+.bmi-text-container{
+    margin: 0 auto;
+}
+.bmi-text-container h2{
+    text-align: left;
+
+}
+.bmi-text-container p{
+    text-align: left;
+}
+.bmi-chart h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+table{
+    margin-top: 50px;
+    border-collapse: collapse;
+}
+.thead>td{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+tr>td{
+    border: 1px solid gray;
+    color: gray;
+    padding: 20px 30px;
+    font-size: 1rem;
+}
+td{
+    text-align: left;
+}
+.bmi-group{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.background{
+    background: rgb(34, 34, 34);
+}
+.background>div>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bmi-container h3{
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+    font-weight: 900;
+    text-align: left;
+}
+
+.bmi-container p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .9rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+.bmi-input-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.bmi-input{
+    border: 2px solid red;
+}
+
+.bmi-row{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12px;
+}
+
+.bmi-input-row div{
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    
+}
+.bmi-input-row div input{
+    
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 50%;
+    border: none;
+}
+.bmi-input-row select{
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.1);
+}
+.bmi-row2 select{
+    width: 55%;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+}
+.bmi-row3 select{
+    width: 100%;
+    color: white;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+}
+
+.bmi-input-row button{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 40px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+}
+
+
+
+/* Media Query For Mobile */
+@media  screen and (max-width:576px) {
+    .navbar ul{
+        visibility: hidden;
+    }
+
+    .banner,
+    .bmi-group,
+    .run{
+        flex-direction: column;
+    }
+    .banner-text-container h1{
+        font-size: 2.25rem;
+        width: 285px;
+        line-height: 90%;
+    }
+    
+    #span{
+        font-size: 2.25rem;
+    }
+    .run-img{
+        width: 100%;
+        margin-top: -100px;
+    }
+
+    .habit-content-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .row1{
+        grid-template-columns: 1.2fr .8fr;
+    }
+    .row2{
+        grid-template-columns: .8fr 1.2fr;
+    }
+}
