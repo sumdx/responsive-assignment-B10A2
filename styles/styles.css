@@ -46,7 +46,7 @@ body{
 
 .section-subtitle{
     color: rgba(255, 255, 255, 0.5);
-    font-size: 1rem;
+    font-size: .9rem;
     text-align: center;
     margin-top: 24px;
 }
@@ -98,6 +98,9 @@ header{
     letter-spacing: 0%;
     cursor: pointer;
     padding: 8px 20px;
+}
+.hidden-title{
+    visibility: hidden;
 }
 
 .navbar div ul li a:hover,
@@ -202,11 +205,9 @@ header{
     margin-top: 28px;
     padding: 16px 40px;
     border-radius: 42px;
-    margin-top: 28px;
     font-size: 1.1rem;
     background-color: transparent;
     border: 2px solid rgb(255, 255, 255);
-    margin-right: 14px;
 }
 
 .banner-button-container button:hover{
@@ -332,6 +333,7 @@ header{
 .bmi{
     background: rgb(34, 34, 34);
     padding: 49px 0;
+    margin-top: 88px;
 }
 
 .bmi-text-container{
@@ -472,6 +474,7 @@ td{
 
 .meet-our-team{
     margin-top: 88px;
+    margin-bottom: 88px;
 }
 .meet-image-div-container{
     padding: 20px;
@@ -521,16 +524,89 @@ td{
     pointer-events: none; 
 }
 
+/* Footer */
+footer{
+    background: rgba(255, 255, 255, 0.1);
+}
+footer>div{
+    padding-top: 66px;
+    padding-bottom: 66px;
+    display: flex;
+    gap: 152px;
+
+}
+.footer-title h2{
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 4.5rem;
+    font-weight: 800;
+    
+    font-style: italic;
+}
+.footer-title p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer>div>div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer>div>div>a{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+footer >p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 36px 0;
+}
+
+footer h3{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
 
 
 /* Media Query For Mobile */
 @media  screen and (max-width:576px) {
-    .navbar ul{
-        visibility: hidden;
+
+    .navbar{
         display: none;
+        visibility: none;
+
     }
+    
     .navbar div{
-        display: block;
+
     }
 
     .banner,
@@ -542,6 +618,24 @@ td{
         font-size: 2.25rem;
         width: 285px;
         line-height: 90%;
+    }
+    .banner-img-container>div{
+        padding: 10px;
+    }
+    .div1{
+        
+        right: -30px;
+        top: 120px;
+    }
+    .div2{
+        left: 5px;
+        bottom: 100px;
+    }
+    .div1 h4{
+        font-size: 2rem;
+    }
+    .div1 p{
+        font-size: .5rem;
     }
     
     #span{
@@ -562,4 +656,56 @@ td{
     .row2{
         grid-template-columns: .8fr 1.2fr;
     }
+
+    .meet-image-div-container{
+        grid-template-columns: 1fr;
+    }
+    .meet-image-div-container div{
+        height: 272px;
+    }
+
+    footer>div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /* training section */
+    .training-img{
+        overflow: hidden;
+    }
+    .row1{
+        overflow: hidden;
+    }
+
+    .section-title{
+        font-size: 2rem;
+    }
+    .section-subtitle{
+        font-size: .8rem;
+    }
+    #resdl{
+        visibility: hidden;
+        display: none;
+    }
+    .training-text p{
+        width: 100%;
+        margin-bottom: 37px;
+    }
+    .bmi-input{
+        margin-top: 42px;
+    }
+    .bmi-text-container p{
+        text-align: center;
+    }
+    .hidden-title{
+        visibility: visible;
+        color: rgb(230, 83, 60);
+        font-size: 2.25rem;
+        font-weight: 800;
+        line-height: 120%;
+        letter-spacing: 0%;
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
 }
